@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newspaper Layout</title>
+
+    <style>
+        /* Page styling */
+        body {
+            background-color: #f2f2f2;
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 30px;
+            color: #222;
+        }
+
+        /* Main newspaper area */
+        .newspaper {
+            max-width: 1100px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+
+            /* Three columns */
+            column-count: 3;
+            column-gap: 40px;
+
+            text-align: justify;
+        }
+
+        /* Heading spans all columns */
+        h1 {
+            column-span: all;
+
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 40px;
+
+            margin-bottom: 25px;
+            border-bottom: 3px solid #222;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Image aligned to left */
+        .article-image {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+
+            float: left;
+            margin: 0 15px 10px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+            .newspaper {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 15px;
+            }
+
+            .newspaper {
+                column-count: 1;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .article-image {
+                width: 100%;
+                height: auto;
+                float: none;
+                margin: 0 0 15px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="newspaper">
+
+        <h1>The Daily Chronicle</h1>
+
+        <h2>Technology Changing Our World</h2>
+
+        <img
+            src="https://picsum.photos/400/250"
+            alt="Technology"
+            class="article-image"
+        >
+
+        <p>
+            Technology has become an important part of our everyday lives.
+            From smartphones and computers to artificial intelligence,
+            modern technology has changed the way people communicate,
+            work and learn.
+        </p>
+
+        <p>
+            The rapid development of digital technologies has created new
+            opportunities for businesses and individuals. Online education,
+            digital payments and remote working have made many activities
+            easier and more convenient.
+        </p>
+
+        <h2>Education in the Digital Age</h2>
+
+        <p>
+            Education is also changing because of technology. Students can
+            now access online courses, digital books and educational videos
+            from almost anywhere. Teachers can use interactive tools to make
+            learning more engaging.
+        </p>
+
+        <p>
+            However, students must also learn how to use technology
+            responsibly. Maintaining a balance between digital activities
+            and traditional learning remains important.
+        </p>
+
+        <h2>Future of Innovation</h2>
+
+        <p>
+            Innovation will continue to influence society in the coming
+            years. Artificial intelligence, robotics and renewable energy
+            are expected to play an important role in shaping the future.
+        </p>
+
+        <p>
+            As technology continues to evolve, people and organizations
+            will need to adapt to new tools and ideas while ensuring that
+            technology is used in a responsible and useful way.
+        </p>
+
+    </main>
+
+</body>
+</html>
