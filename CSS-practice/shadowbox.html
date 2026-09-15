@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadowbox</title>
+    <style>
+        
+        :root{
+            --primary-color: rgb(92, 58, 58);
+            --custom: 650px;
+
+        }
+        .container{
+            background-color: beige;
+            height: 850px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom);
+            height: 500px;
+            border: 3px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 10px 10px; */
+            /* box-shadow: 10px 15px 50px 100px rgb(147, 196, 147); */
+            /* box-shadow: inset 10px 15px rgb(44, 44, 100); */
+            #head1{
+                text-shadow: 2px 2px 2px pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.webp" alt="logo" />
+            <h2 id="head1">Welcome to bridgelabz</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, cum doloremque? Nesciunt consequuntur
+                sint assumenda earum quas sunt quia est.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #222;
+            margin: 30px;
+            font-family: Arial;
+        }
+
+        /* Main 3 x 3 Grid */
+        .main-grid {
+            width: 700px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 220px);
+            gap: 15px;
+        }
+
+        /* Each outer box */
+        .box {
+            border: 7px solid #333;
+            background: white;
+            padding: 5px;
+            display: grid;
+            gap: 3px;
+        }
+
+        .red {
+            background: #ff3b3b;
+        }
+
+        .green {
+            background: #20c997;
+        }
+
+        .orange {
+            background: #ff7043;
+        }
+
+        /* -------- BOX 1 -------- */
+        .box1 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box1 .red {
+            grid-column: span 1;
+        }
+
+        .box1 .green {
+            grid-column: span 1;
+        }
+
+        /* -------- BOX 2 -------- */
+        .box2 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box2 .red1 {
+            grid-column: span 2;
+        }
+
+        .box2 .orange {
+            grid-row: span 1;
+        }
+
+        /* -------- BOX 3 -------- */
+        .box3 {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box3 .green {
+            grid-row: span 2;
+        }
+
+        /* -------- BOX 4 -------- */
+        .box4 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box4 .orange {
+            grid-column: span 2;
+        }
+
+        /* -------- BOX 5 -------- */
+        .box5 {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        /* -------- BOX 6 -------- */
+        .box6 {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box6 .orange {
+            grid-column: span 2;
+        }
+
+        /* -------- BOX 7 -------- */
+        .box7 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        .box7 .red {
+            grid-row: span 2;
+        }
+
+        /* -------- BOX 8 -------- */
+        .box8 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box8 .orange {
+            grid-column: span 2;
+        }
+
+        /* -------- BOX 9 -------- */
+        .box9 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box9 .green {
+            grid-row: span 2;
+        }

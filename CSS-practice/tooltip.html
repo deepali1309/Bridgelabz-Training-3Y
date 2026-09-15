@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltipt</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+
+
+        }
+        .tooltip-text{
+            visibility: hidden;
+            position: absolute;
+            background: #000;
+            color: white;
+            padding: 8px;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        Hover me
+        <span class="tooltip-text"> Section F</span>
+  
+    </div>
+</body>
+</html>
